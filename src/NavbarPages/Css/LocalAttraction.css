@@ -1,0 +1,10 @@
+.localattractioncontainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.LocalAttraction{
+    width: 1024px;
+    margin-top: 70px;
+    background-color: aqua;
+}

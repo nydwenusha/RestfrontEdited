@@ -1,0 +1,32 @@
+.upfootercontain{
+    background-color: #D9DDDC;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.contentofupfooter{
+    margin-top: 10px;
+    margin-left: 50px;
+    text-align: left;
+    
+}
+.contentofupfooter li{
+    margin-top: 10px;
+    margin-left: 15%;
+    list-style: none;
+}
+.contentofupfooter a{
+    text-decoration: none;
+    color: black;
+}
+.adressofguesthouse{
+    position: absolute;
+    top: 30%;
+    right: 30%;
+}
+.contentofadress{
+    text-align: left;
+}
+.contentofadress td{
+     padding-right: 20px;
+}

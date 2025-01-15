@@ -1,0 +1,101 @@
+.navbar{
+    background-color: #808588;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between; 
+    justify-content: center;
+    padding: 0 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+
+}
+.newnav{
+    display: flex;
+    display: inline-flex;
+    width: auto;
+    justify-content: space-between;
+}
+.navtext {
+    display: flex;
+    gap: 20px;
+    position: relative;
+    
+}
+
+.navtext a{
+     color: white;
+     text-decoration: none;
+}
+ 
+.signupbutton{
+     
+    display: block;
+    margin-right: -250px;
+    margin-left: 170px;
+    display: flex;
+    display: inline;
+    flex-direction: column;
+}
+.signupbutton button{
+    color: white;
+    background-color: #FF6701;
+    border: none;
+    border-radius: 10px;
+    margin-left: 10px;
+    width: 100px;
+    height: 30px;
+    cursor: pointer; 
+}
+
+/* here i create the new travel underline in here*/
+ 
+.animationline {
+    position: absolute;
+    bottom: 0;
+    background-color: #FF6701;
+    height: 5px;
+    border-radius: 2px;
+    transition: width 0.5s ease, left 0.5s ease;
+  }
+  
+  .start-Home {
+    width: 50px;
+    left: 0;
+  }
+  
+  .start-Rooms {
+    width: 55px;
+    left: 60px;
+  }
+  
+  .start-About {
+    width: 55px;
+    left: 128px;
+  }
+  
+  .start-LocalAttraction {
+    width: 125px;
+    left: 190px;
+  }
+  
+  .start-VehicleRental {
+    width: 110px;
+    left: 320px;
+  }
+  
+  .start-Gallery {
+    width: 54px;
+    left: 443px;
+  }
+  
+  .start-Restaurant {
+    width: 80px;
+    left: 510px;
+  }
+
+ 

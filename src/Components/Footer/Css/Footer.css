@@ -1,0 +1,20 @@
+.footercontainer{
+    background-color: black;
+    color: white;
+    display: flex; 
+
+    position: relative;
+}
+.languagechange {
+    height: fit-content;
+
+    position: absolute;
+    right: 10px;
+    bottom: 5px;
+}
+.contentoffooter{
+    text-align: left;
+    margin-left: 20px;
+    margin-right: 100px;
+   
+}

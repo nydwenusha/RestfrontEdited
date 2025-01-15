@@ -1,0 +1,30 @@
+.roomscontainer{
+    display: flex;
+    flex-direction: column;
+ 
+}
+.mainpictureinrooms{
+    margin-top: 70px;
+    height: 600px;
+  
+    background-image: url(../../Sources/mainpicture.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.secondroomcontainer{
+    width: 100%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    margin-bottom: 50px;
+}
+.roomsoftheguestwithdescription{
+    gap: 20px;
+    width: 1024px;
+    display: flex;
+    flex-wrap: wrap;
+      
+    align-items: center;
+    justify-content: center;
+}

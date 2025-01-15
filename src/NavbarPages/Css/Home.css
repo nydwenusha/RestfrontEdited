@@ -1,0 +1,213 @@
+.Homecontain{
+    margin-top: 70px;
+    height: 3000px;
+}
+.Homemidlecontainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.mainpicture{
+    height: 600px;
+    width: 100%; /* Ensure the picture takes full width */
+    flex-shrink: 0; /* Prevent shrinking */ 
+
+    background-image: url("../../Sources/mainpicture.jpg");
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-size: cover;
+
+}
+#Booknow{
+    background-color: #FF6701;
+    color: white;
+    border-radius: 5px;
+    width: 150px;
+    height: 30px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+
+    position: absolute;
+    bottom: 150px;
+    right: 250px;
+}
+
+/*use style the welcome description */
+
+.welcome-description {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+}
+
+.welcome-title {
+  text-align: center;
+  font-size: 2em;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.welcome-paragraph {
+  font-size: 1.1em;
+  line-height: 1.6;
+  color: #555;
+}
+
+.welcome-paragraph.collapsed {
+  height: 150px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.welcome-paragraph.expanded {
+  height: auto;
+}
+
+.see-more-btn {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background-color 0.3s ease;
+}
+
+.see-more-btn:hover {
+  background-color: #0056b3;
+}
+
+
+/* */
+
+.offerpackages, .location, .features, .propertydetails, .questions, .kitchen{
+     
+    width: 1024px;
+}
+/* design the rooms of the guest house*/
+ 
+.homeRooms{
+    width: 1024px;
+    height: 450px;
+   
+    display: flex;
+    flex-direction: column;
+     
+}
+
+/**/
+
+.slick-center .room-wrapper {
+    transform: scale(1.2); /* Scale up the centered slide */
+    z-index: 2; /* Bring the centered slide to the front */
+    transition: transform 0.5s, z-index 0.5s; /* Smooth transition */
+  }
+ 
+  .room-wrapper {
+    transition: transform 0.5s, z-index 0.5s; /* Smooth transition for all slides */
+     
+  }
+  
+  .slick-center .slick-slide {
+    opacity: 1; /* Full opacity for the centered slide */
+  }
+  
+  .slick-next, .slick-prev {
+    background-color: rgb(226, 226, 226) !important;
+    color: #000 !important;
+    
+    border-radius: 20px !important;
+    font-size: 12px !important;
+    cursor: pointer !important;
+    position: absolute !important;
+    top: 50% !important;
+    transform: translateY(-50%);
+    z-index: 1;
+  }
+  .slick-next {
+    right: 10px;
+ }
+ 
+ .slick-prev {
+   left: 10px;
+ }
+
+  .slick-next:hover, .slick-prev:hover {
+    background-color: rgb(109, 109, 109) !important;
+    color: black !important;
+  }
+  .arrow-text {
+    margin-top: 30px !important; /* Adjust as needed */
+  }
+  .slick-dots.custom-dots {
+  display: flex !important;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.slick-dots.custom-dots li {
+  width: auto;
+  margin: 0 5px;
+}
+
+.slick-dots.custom-dots li button:before {
+  font-size: 5px;
+  color: #000;
+  opacity: 1;
+}
+
+.slick-dots.custom-dots li.slick-active button:before {
+  color: #000;
+  opacity: 0.75;
+}
+
+
+
+
+
+
+
+/* design the features of the guest house*/
+.features{
+    width: 1024px;
+    height: 200px;
+    border: solid 1px;
+}
+
+/* design the property of the guest house*/
+.propertydetails{
+    width: 1024px;
+    height: 200px;
+    border: solid 1px;
+}
+
+/* design the questions of the guest house*/
+.questions{
+    width: 1024px;
+    height: 200px;
+    border: solid 1px;
+}
+
+/* design the kitchen of the guest house*/
+.kitchen{
+    width: 1024px;
+    height: 200px;
+    border: solid 1px;
+}
+
+/* design the location of the guest house*/
+.location{
+    width: 1024px;     
+}
+.insidelocation{
+  padding: 10px;
+}
+.insidelocation, .location{
+  background-Color:#dcdcdc;
+}
