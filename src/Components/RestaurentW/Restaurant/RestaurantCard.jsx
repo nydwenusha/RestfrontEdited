@@ -4,9 +4,11 @@ import FavoriteIcon from "@mui/icons-material/Favorite";
 import Card from '@mui/material/Card';
 import Chip from '@mui/material/Chip';
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
+import { useNavigate } from "react-router-dom";
+import { useDispatch, useSelector } from "react-redux";
 
 
-const RestaurantCard = (/*{item}*/) => {
+const RestaurantCard = ({item}) => {
 
    /*const navigate=useNavigate() 
      const dispatch=useDispatch();
@@ -16,13 +18,15 @@ const RestaurantCard = (/*{item}*/) => {
      const handleAddToFavorite=()=>{
          dispatch(addToFavorite({restaurantId:item.id,jwt}))
       }
+         
 
       const handleNavigateToRestaurant=()=>{
         if(item.open){
            navigate(`/restaurant/${item.address.city}/${item.name}/${item.id}`)
         }
       }
-     */
+      */
+     
 
 
   return (
@@ -37,9 +41,9 @@ const RestaurantCard = (/*{item}*/) => {
           src="https://images.unsplash.com/photo-1497644083578-611b798c60f3?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cmVzdGF1cmFudHxlbnwwfHwwfHx8MA%3D%3D"
           alt=""
 
-          /*
-          src={item.images[1]}
-          */
+          
+         // src={item.images[]}
+          
         />
         <Chip
           size="small"

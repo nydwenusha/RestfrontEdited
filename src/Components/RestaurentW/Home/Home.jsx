@@ -2,8 +2,18 @@ import React from 'react'
 import "./Home.css";
 import MultiItemCarousel from './MultiItemCarousel.jsx';
 import RestaurantCard from '../Restaurant/RestaurantCard.jsx';
+import { useDispatch } from 'react-redux';
+import { useNavigate } from 'react-router-dom';
+import { useSelector } from 'react-redux';
+import { useEffect } from 'react';
+import { getAllRestaurantsAction } from '../State/Restaurant/Action.js';
+import { findCart } from '../State/Cart/Action.js';
 
-const restaurant=[1,1,1,1,1,1,1,1]
+
+
+
+
+const restaurants=[1,1,1,1,1,1,1,1]
 const Home = () => {
 
     /*
@@ -18,9 +28,10 @@ const Home = () => {
         dispatch(getAllRestaurantsAction(jwt))
         dispatch(findCart(jwt))
         },[])
-
+        
+*/
          
- */
+ 
 
   return (
     <div className='pb-10'>
@@ -48,13 +59,14 @@ const Home = () => {
             <h1 className='text-2xl font-semibold text-gray-400 pb-8'>Order From Our Handpicked Favorites</h1>
             <div className='flex flex-wrap items-center justify-around gap-5'>
                 {
-                    restaurant.map((item)=><RestaurantCard/>)
+                    restaurants.map((item)=><RestaurantCard/>)
 
                     
                  /*restaurant.restaurants.map((item)=><RestaurantCard item=
                  {item}/>)
-
                  */
+
+                 
 
                   
                 

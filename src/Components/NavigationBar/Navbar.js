@@ -2,15 +2,24 @@ import React, { useState } from 'react';
 import { Link, useNavigate, useLocation } from 'react-router-dom';
 import './Navbar.css';
 
+
+ 
+ 
+
+
 export default function Navbar() {
   const navigate = useNavigate();
   const location = useLocation();
   const [activeLink, setActiveLink] = useState(location.pathname);
 
+   
+
   const handleClick = (path) => {
     setActiveLink(path);
     navigate(path);
   };
+
+   
 
   return (
     <div className='navbar'>
@@ -58,6 +67,11 @@ export default function Navbar() {
           >
             Gallery
           </Link>
+
+
+          
+
+
           <Link 
             to='/Restourents' 
             className={activeLink === '/Restourents' ? 'active' : ''}
@@ -65,8 +79,10 @@ export default function Navbar() {
           >
             Restaurant
           </Link>
-          {/* Animation line */}
-          <div className={`animationline ${activeLink === '/' ? 'start-Home' : 
+
+         
+      {/* Animation line */}
+      <div className={`animationline ${activeLink === '/' ? 'start-Home' : 
                                      activeLink === '/Rooms' ? 'start-Rooms' : 
                                      activeLink === '/About' ? 'start-About' : 
                                      activeLink === '/LocalAttraction' ? 'start-LocalAttraction' :
@@ -74,11 +90,14 @@ export default function Navbar() {
                                      activeLink === '/Gallery' ? 'start-Gallery' :
                                      activeLink === '/Restourents' ? 'start-Restaurant' : ''}`}>
           </div>
-        </div>
+
+          
+        </div>     
         <div className='signupbutton'>
           <button onClick={() => navigate("/Login")}>Log in</button>
         </div>
       </div>
-    </div>
+     </div>
+    
   );
 }
