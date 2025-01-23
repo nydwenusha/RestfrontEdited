@@ -10,22 +10,7 @@ import { useDispatch, useSelector } from "react-redux";
 
 const RestaurantCard = ({item}) => {
 
-   /*const navigate=useNavigate() 
-     const dispatch=useDispatch();
-     const jwt=localStorage.getItem("jwt")
-     const {auth}=useSelector(store=>store)
-
-     const handleAddToFavorite=()=>{
-         dispatch(addToFavorite({restaurantId:item.id,jwt}))
-      }
-         
-
-      const handleNavigateToRestaurant=()=>{
-        if(item.open){
-           navigate(`/restaurant/${item.address.city}/${item.name}/${item.id}`)
-        }
-      }
-      */
+    
      
 
 
@@ -42,32 +27,31 @@ const RestaurantCard = ({item}) => {
           alt=""
 
           
-         // src={item.images[]}
+          
           
         />
         <Chip
           size="small"
           className="absolute top-2 left-2"
-          color={true?"success":"error"}    /* color={item.open?"success":"error"}*/
-          label={true?"open":'closed'}      /* label={item.open?"open":'closed'}*/
+          color={true?"success":"error"}     
+          label={true?"open":'closed'}       
         />
       </div>
       <div className="p-4 textPart lg:flex w-full justify-between">
         <div className="space-y-1">
-              <p /*onClick={handleNavigateToRestaurant} */className="font-semibold text-lg cursor-pointer">Midland Restaurant{/*{item.name}*/}</p>    
+              <p className="font-semibold text-lg cursor-pointer">Midland Restaurant</p>    
               <p className="text-gray-500 text-sm">
                   Craving it all? Dive into our global fla...
-                  {/*{item.description}*/}
+                   
               </p>
 
                
 
         </div>
         <div>
-            <IconButton /* onClick={handleAddToFavorite} */>
+            <IconButton>
                 {true?<FavoriteIcon/>:<FavoriteBorderIcon/>}
-                {/*  {isPresentInFavorites(auth.favorites,item)?<FavoriteIcon/
-                >:<FavoriteBorderIcon/>} */}
+                 
             </IconButton>
         </div>
 

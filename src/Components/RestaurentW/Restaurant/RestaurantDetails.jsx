@@ -32,56 +32,21 @@ const menu=[1,1,1,1,1,1]
 
 const RestaurantDetails = () => {
   const [foodType, setFoodType] = useState("all");
-  /*
-     const navigate=useNavigate() 
-     const dispatch=useDispatch();
-     const jwt=localStorage.getItem("jwt")
-     const {auth,restaurant,menu}=useSelector(store=>store)
-     const [selectedCategory,setSelectedCategory]=useState("");
-
-     const {id,city}=useParams();
-     */
+   
 
   const handleFilter = (e) => {
-    //setFoodType(e.target.value)
+     
     console.log(e.target.value, e.target.name);
   };
 
   const handleFilterCategory = (e,value) => {
-    //setSelectedCategory(value)
+     
     console.log(e.target.value, e.target.name,value);
   };
 
-  /* console.log("restaurant",restaurant)*/
+   
 
-  /*
-    useEffect(()=>{
-      dispatch(getRestaurantById({jwt,restaurantId:id}))
-      dispatch(getRestaurantsCategory({jwt,restaurantId:id}))
-      dispatch(getMenuItemsByRestaurantId(
-      {jwt,
-      restaurantId:id,
-      vegetarian:true,
-      nonveg:false,
-      seasonal:true,
-      foodCategory:""
-      })
-      );
-      },[]);
-
-      useEffect(()=>{
-        dispatch(
-           getMenuItemsByRestaurantId({
-              jwt,
-              restaurantId:id,
-              vegetarian:true,  //foodType==="vegetarian",
-              nonveg:false,     //foodType==="non_vegetarian",
-              seasonal:true,    //foodType==="seasonal"
-              foodCategory:selectedCategory, 
-          })
-        );
-        },[selectedCategory,//foodType])
-    */
+   
 
   return (
     <div className="px-5 lg:px-20">
@@ -95,7 +60,7 @@ const RestaurantDetails = () => {
               <img
                 className="w-full h-[40vh] object-cover"
                 src="https://images.pexels.com/photos/941861/pexels-photo-941861.jpeg?auto=compress&cs=tinysrgb&w=400"
-                /* src={restaurant.restaurant?.images[0]} */
+                 
                 alt=""
               />
             </Grid>
@@ -104,7 +69,7 @@ const RestaurantDetails = () => {
               <img
                 className="w-full h-[40vh] object-cover"
                 src="https://images.pexels.com/photos/1307698/pexels-photo-1307698.jpeg?auto=compress&cs=tinysrgb&w=400 "
-                /* src={restaurant.restaurant?.images[1]} */
+                 
                 alt=""
               />
             </Grid>
@@ -113,7 +78,7 @@ const RestaurantDetails = () => {
               <img
                 className="w-full h-[40vh] object-cover"
                 src="https://images.pexels.com/photos/735869/pexels-photo-735869.jpeg?auto=compress&cs=tinysrgb&w=400 "
-                /* src={restaurant.restaurant?.images[1]} */
+                 
                 alt=""
               />
             </Grid>
@@ -121,14 +86,14 @@ const RestaurantDetails = () => {
         </div>
         <div className="pt-3 pb-5">
           <h1 className="text-4xl font-semibold">
-            Indian Fast Food {/*{restaurant.restaurant?.name}  */}
+            Indian Fast Food  
           </h1>
 
           <p className="text-gray-500 mt-1">
             ertygu fhgjk cvb ygukh gkj cbv rytu yukh yyiou cvbnmn,m cvbnmn
             ghjkkkj vbvn tyuy dgfjh bnmn uilk zdfgj tryuy ghj vbj hg ghj fgmnmn
             vbnb bnbm hjhkjl rtyu dg vh ghjkhjku ghgjhjh
-            {/* {restaurant.restaurant?.description} */}
+             
           </p>
 
           <div className="space-y-3 mt-3">
@@ -155,11 +120,11 @@ const RestaurantDetails = () => {
 
               <FormControl className="py-10 space-y-5" component={"fieldset"}>
                 <RadioGroup
-                  onChange={handleFilter/*handleFilterCategory */}
+                  onChange={handleFilter}
                   name="food_category"
-                 // value={foodType}
+                  
                 >
-                  {/*restaurant.categories*/foodTypes.map((item) => (
+                  {foodTypes.map((item) => (
                     <FormControlLabel
                       key={item.value}
                       value={item.value}
@@ -183,12 +148,12 @@ const RestaurantDetails = () => {
                   value={foodType}
                 >
                   {
-                    /*restaurant.*/ categories.map((item) => (
+                     categories.map((item) => (
                       <FormControlLabel
                         key={item}
                         value={item}
                         control={<Radio />}
-                        label={item /*.name */}
+                        label={item}
                       />
                     ))
                   }
@@ -199,8 +164,8 @@ const RestaurantDetails = () => {
         </div>
 
         <div className="space-y-5 lg:w-[80%] lg:pl-10">
-          {menu./*menuItems.*/ map((item) => (
-            <MenuCard /*item={item}*/ />
+          {menu. map((item) => (
+            <MenuCard />
           ))}
         </div>
       </section>

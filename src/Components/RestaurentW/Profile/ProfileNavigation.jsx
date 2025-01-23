@@ -50,7 +50,7 @@ const ProfileNavigation = ({ open, handleClose }) => {
           {menu.map((item, i) => (
             <React.Fragment key={i}>
               {" "}
-              {/* Added unique key here */}
+              
               <div
                 onClick={() => handleNavigate(item)}
                 className="px-5 flex items-center space-x-5 cursor-pointer"

@@ -9,22 +9,7 @@ import FormControlLabel from '@mui/material/FormControlLabel';
 import Checkbox from '@mui/material/Checkbox';
 import { Button } from '@mui/material';
 
-/*const ingredients=[
-    {
-        category:"Nuts & seeds",
-        ingredients:"Cashews"
-    },
-    {
-        category:"Protein",
-        ingredients:"Protein"
-    },
-    {
-        category:"Protein",
-        ingredients:"Bacon strips"
-
-    }
-]
-    */
+ 
 
 const demo=[
     {
@@ -38,39 +23,12 @@ const demo=[
      
 ]
 
-const MenuCard = ({/*item */}) => {
-    //const [selectedIngredients,setSelectedIngredients]=useState([])
-    //const dispatch=useDispatch();
+const MenuCard = ({ }) => {
+     
     const handleCheckBoxChange=(value)=>{
 console.log("value")
     };
-    /*const handlAddItemToCart=(e)=>{
-        e.preventDefault()
-        const reqData = {
-          token:localStorage.getItem("jwt"),
-         cartItem:{
-           menuItemId:item.id,
-           quantity:1,
-           ingredients:selectedIngredients,
-         },
-      
-      };
-      dispatch(addItemToCart(reqData))
-      console.log("req data",reqData)
-         
-      };
-
-      const handleCheckBoxChange=(itemName)=>{
-         // console.log("value",itemName);
-          if(selectedIngredients.includes(itemName)){
-             setSelectedIngredients(selectedIngredients.filter((item)
-             =>item!==itemName))
-          }else{
-            setselectedIngredients([...selectedIngredients,itemName])
-          }
-        };
-
-      */
+     
   return (
     <Accordion>
       <AccordionSummary
@@ -84,29 +42,29 @@ console.log("value")
               className="w-[7rem] h-[7rem] object-cover"
               src="https://images.unsplash.com/photo-1508736793122-f516e3ba5569?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGJ1cmdlcnxlbnwwfHwwfHx8MA%3D%3D"
               alt=""
-              /*src={item.images[0] }*/
+              
             />
             <div className="space-y-1 lg:space-y-5 lg:max-w-2xl">
-              <p className="font-semibold text-xl">Burger{/*{item.name} */}</p>
-              <p>Rs.499 {/*item.price */}</p>
-              <p className="text-gray-400">nice food {/* item.description*/}</p>
+              <p className="font-semibold text-xl">Burger </p>
+              <p>Rs.499 </p>
+              <p className="text-gray-400">nice food  </p>
             </div>
           </div>
         </div>
       </AccordionSummary>
       <AccordionDetails>
-        <form /*onSubmit={handleNavigateItemToCart}*/>
+        <form  >
           <div className="flex gap-5 flex-wrap">
-            {/*Object.keys(categorizeIngredients(item.ingredients)).*/demo.map((item) => (
+            { demo.map((item) => (
               <div>
                 <p>{item.category}</p>
                 <FormGroup>
-                  {/*categorizeIngredients*/item.ingredients/*[category] */.map((item) => (
-                    <FormControlLabel /*key={item.name} */
+                  { item.ingredients.map((item) => (
+                    <FormControlLabel  
                        control={
-                          <Checkbox onChange={() => handleCheckBoxChange(item/*.name */)} />
+                          <Checkbox onChange={() => handleCheckBoxChange(item)} />
                         }
-                       label={item/*item.name */} 
+                       label={item} 
                        />
                   ))}
                 </FormGroup>
@@ -114,7 +72,7 @@ console.log("value")
             ))}
           </div>
           <div className='pt-5'>
-             <Button /*onClick={handleAddItemTocart}*/variant="contained" disabled={false}
+             <Button variant="contained" disabled={false}
              type="submit">{true?"Add to Cart":"Out Of Stock"}</Button>
           </div>
         </form>

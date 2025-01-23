@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import { Routes, Route } from 'react-router-dom';  // For routing components
-import UserProfile from './UserProfile';  // Assuming UserProfile is in the same directory
+import { Routes, Route } from 'react-router-dom';   
+import UserProfile from './UserProfile';   
 import ProfileNavigation from './ProfileNavigation'
 import Orders from './Orders'
 

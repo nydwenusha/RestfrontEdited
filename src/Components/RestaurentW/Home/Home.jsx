@@ -16,20 +16,7 @@ import { findCart } from '../State/Cart/Action.js';
 const restaurants=[1,1,1,1,1,1,1,1]
 const Home = () => {
 
-    /*
-     const dispatch=useDispatch()
-     const jwt=localStorage.getItem("jwt")
-     const {restaurant}=useSelector(store=>store)
-     const navigate=useNavigate()
-
-     console.log("restaurant",restaurant)
      
-     useEffect(()=>{
-        dispatch(getAllRestaurantsAction(jwt))
-        dispatch(findCart(jwt))
-        },[])
-        
-*/
          
  
 
@@ -62,10 +49,7 @@ const Home = () => {
                     restaurants.map((item)=><RestaurantCard/>)
 
                     
-                 /*restaurant.restaurants.map((item)=><RestaurantCard item=
-                 {item}/>)
-                 */
-
+                  
                  
 
                   
